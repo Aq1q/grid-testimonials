@@ -51,6 +51,7 @@ body{
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr;
+    gap: 24px;
     width: 327px;
     .user-box{
         padding: 23px 30px;
@@ -95,6 +96,7 @@ body{
         }
     }
     #daniel{
+        background: url(./images/bg-pattern-quotation.svg) right 24px top 0 no-repeat;
         height: 444px;
         background-color: $moderate-violet;
         img{
@@ -127,6 +129,70 @@ body{
                 font-size: 0.8rem;
             }
             padding-right: 14px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container{
+        width: 1111px;
+        height: 573px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        .user-box{
+            box-shadow: 1px 1px 4px lightgray;
+        }
+    }   
+    #daniel{
+        background: url(./images/bg-pattern-quotation.svg) right 80px top 0 no-repeat !important;
+        background-color: $moderate-violet !important;
+        height: 100% !important;
+        grid-column: 1 / 3;
+        .user-test{
+            p{
+                font-size: 0.8rem !important;
+                padding-right: 25px;
+            }
+        }
+    }
+    #jonathan {
+        height: 100% !important;
+        .user-test{
+            p{
+                font-size: 0.8rem !important;
+                padding-right: 25px;
+            }
+        }
+    }
+    #jeanette{
+        height: 100% !important;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        .user-test{
+            p{
+                font-size: 0.8rem !important;
+                padding-right: 25px;
+            }
+        }
+    }
+    #patrick{
+        height: 100% !important;
+        grid-column: 2 / 4;
+        .user-test{
+            p{
+                font-size: 0.8rem !important;
+                padding-right: 25px;
+            }
+        }
+    }
+    #kira {
+        height: 100% !important;
+        grid-column: 4 / 5;
+        grid-row: 1 / 3;
+        .user-test{
+            p{
+                font-size: 0.8rem !important;
+            }
         }
     }
 }
