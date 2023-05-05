@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: hsl(210, 46%, 95%);
+  font-family: "Barlow Semi Condensed";
+  padding-top: 71px;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: 13px;
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  width: 327px;
+}
+.container .user-box {
+  padding: 23px 30px;
+  padding-right: 25px;
+  border-radius: 15px;
+}
+.container .user-box .user-container {
+  height: 32px;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.container .user-box .user-container img {
+  border-radius: 50%;
+}
+.container .user-box .user-container .userInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+}
+.container .user-box .user-container .userInfo h1 {
+  color: hsl(0, 0%, 100%);
+}
+.container .user-box .user-container .userInfo p {
+  color: hsla(0, 0%, 100%, 0.5);
+  font-size: 0.8em;
+}
+.container .user-box .user-test {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.container .user-box .user-test h2 {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.6em;
+  font-weight: 600;
+}
+.container .user-box .user-test p {
+  color: hsla(0, 0%, 100%, 0.3);
+  font-size: 1.1em;
+  line-height: 1.3em;
+}
+.container #daniel {
+  height: 444px;
+  background-color: hsl(263, 55%, 52%);
+}
+.container #daniel img {
+  border: 2px solid hsl(264, 47%, 67%);
+}
+.container #jonathan {
+  height: 240px;
+  background-color: hsl(217, 19%, 35%);
+}
+.container #jeanette {
+  height: 222px;
+  background-color: hsl(0, 0%, 100%);
+}
+.container #jeanette .user-container .userInfo h1 {
+  color: hsl(208, 7%, 35%);
+}
+.container #jeanette .user-container .userInfo p {
+  color: hsla(208, 7%, 35%, 0.5);
+}
+.container #jeanette .user-test h2 {
+  color: hsl(208, 7%, 35%);
+}
+.container #jeanette .user-test p {
+  color: hsla(208, 7%, 35%, 0.3);
+}
+.container #patrick {
+  height: 384px;
+  background-color: hsl(219, 29%, 14%);
+}
+.container #patrick img {
+  border: 2px solid hsl(264, 47%, 67%);
+}
+.container #kira {
+  height: 438px;
+  background-color: hsl(0, 0%, 100%);
+}
+.container #kira .user-container .userInfo h1 {
+  color: hsl(208, 7%, 35%);
+}
+.container #kira .user-container .userInfo p {
+  color: hsla(208, 7%, 35%, 0.5);
+}
+.container #kira .user-test h2 {
+  color: hsl(208, 7%, 35%);
+}
+.container #kira .user-test p {
+  color: hsla(208, 7%, 35%, 0.3);
+}
+.container #kira .user-test {
+  padding-right: 14px;
+}
+.container #kira .user-test p {
+  font-size: 0.8rem;
+}/*# sourceMappingURL=style.css.map */

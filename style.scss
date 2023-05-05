@@ -1,0 +1,132 @@
+//Primary colors
+
+$moderate-violet: hsl(263, 55%, 52%);
+$very-dark-grayish-blue: hsl(217, 19%, 35%);
+$very-dark-blackish-blue: hsl(219, 29%, 14%);
+$white: hsl(0, 0%, 100%);
+
+//Neutral colors
+
+$light-gray: hsl(0, 0%, 81%);
+$light-grayish-blue: hsl(210, 46%, 95%);
+
+@mixin colors {
+    .user-container{
+        .userInfo{
+            h1{
+                color: hsl(208, 7%, 35%);
+            }
+            p{
+                color: hsla(208, 7%, 35%, 0.5);
+            }
+    }
+    }
+    .user-test{
+        h2{
+            color: hsl(208, 7%, 35%);
+        }
+        p{
+            color: hsla(208, 7%, 35%, 0.3);
+        }
+    }
+}
+
+*{
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    background-color: $light-grayish-blue;
+    font-family: 'Barlow Semi Condensed';
+    padding-top: 71px;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    font-size: 13px;
+}
+.container{
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    width: 327px;
+    .user-box{
+        padding: 23px 30px;
+        padding-right: 25px;
+        border-radius: 15px;
+        .user-container{
+            height: 32px;
+            display: flex;
+            gap: 15px;
+            img{
+                border-radius: 50%;
+            }
+            .userInfo{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap:2px;
+                h1{
+                    color: $white;
+                }
+                p{
+                    color: hsla(0, 0%, 100%, 0.5);
+                    font-size: 0.8em;
+                }
+            }
+            margin-bottom: 20px;
+        }
+        .user-test{
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            h2{
+                color: $white;
+                font-size: 1.6em;
+                font-weight: 600;
+            }
+            p{
+                color: hsla(0, 0%, 100%, 0.3);
+                font-size: 1.1em;
+                line-height: 1.3em;
+            }
+        }
+    }
+    #daniel{
+        height: 444px;
+        background-color: $moderate-violet;
+        img{
+            border: 2px solid hsl(264, 47%, 67%);
+        }
+    }
+    #jonathan{
+        height: 240px;
+        background-color: $very-dark-grayish-blue;
+
+    }
+    #jeanette{
+        height: 222px;
+        background-color: $white;
+        @include colors();
+    }
+    #patrick{
+        height: 384px;
+        background-color: $very-dark-blackish-blue;
+        img{
+            border: 2px solid hsl(264, 47%, 67%);
+        }
+    }
+    #kira{
+        height: 438px;
+        background-color: $white;
+        @include colors();
+        .user-test{
+            p{
+                font-size: 0.8rem;
+            }
+            padding-right: 14px;
+        }
+    }
+}
